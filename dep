@@ -137,7 +137,7 @@ elif [[ "$(uname)" == 'Linux' ]]; then
     if [[ $distribution == 'ubuntu' ]]; then
         sudo apt-get update
         # python-software-properties is required for apt-add-repository
-        sudo apt-get install -y python-software-properties
+        sudo apt-get install -y software-properties-common
         echo "==> Found Ubuntu version ${ubuntu_major_version}.xx"
         if [[ $ubuntu_major_version -lt '12' ]]; then
             echo '==> Ubuntu version not supported.'
